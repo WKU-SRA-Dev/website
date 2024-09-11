@@ -1,6 +1,9 @@
 {% assign cache_bust = site.time|date:'?v=%s' %}
 {% assign page_url = page.url | regex_replace: '/index$|/index.html$|\.html$|/$' -%}
 
+<!---the page's title is the content of title tag, and I found these
+{% if short-title %}{{short-title}}{% else %}{{title}}{% endif %} | {{site.title}} 
+ -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
